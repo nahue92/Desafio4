@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url(../images/fondo1.jpg);
+    background-image: url(../images/tic-tac-toe.png);
         background-repeat: repeat;
         background-size: cover;
         background-position: center;
@@ -71,7 +71,7 @@ h1{
     transition: scale 2s, border 2s;
 }
 .img1:hover{
-    scale: (3,2);
+    scale: (5,5);
     border: 0.2rem dotted #9b59b6;
 }
 
@@ -112,7 +112,7 @@ footer ul li{
     body{
         height: 100vh;
         width: 100vw;
-        background-image: url(../images/fondo1.jpg);
+        background-image: url(../images/tic-tac-toe.png);
             background-repeat: repeat;
             background-size: cover;
             background-position: center;
@@ -123,7 +123,7 @@ footer ul li{
         border-bottom: 1rem solid black;
         justify-content: space-between;
     }
-    h1{
+    .title{
         font-size: 2rem;
         font-weight: bold;
         animation-name: teclados;
@@ -194,20 +194,18 @@ p{
 
 }
 .img1{
-    transition: border 1s, border-radius 1s,  transform 1s;
+    transition: scale 1s, border-radius 1s;
 }
 .img1:hover{
     border: solid 0.3rem white;
-    transform: rotate(360deg);
+    
     border-radius: 4rem;
 }
 
-footer{
-    margin-top: 13rem;
-}
 
 .foot{
     background-color: rgba(51, 48, 48, 0.57);
+    margin-top: 30rem;
 }
 footer ul li{
     list-style-type: none;
