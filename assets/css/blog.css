@@ -139,19 +139,20 @@ footer ul li{
     .title{
         font-size: 2rem;
         font-weight: bold;
-        animation-name: teclados;
-        animation-duration: 5s;
+        animation-name: titulo;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
     }
 
-@keyframes teclados{
+@keyframes titulo{
     0% {
-    left: 0;
-    top: 0;
+    transform: translateY(10px);
+    }
+    50%{
+       transform:translateY(0px) ;
     }
     100% {
-    left: 5rem;
-    top: 0rem;
+    transform: translateY(-10px);
     color: #9b59b6;
     }
 }
@@ -214,4 +215,10 @@ footer ul li{
     .cp{
         margin-left: 105rem;
     }
+    }
+
+    .imagen-cuadro{
+        margin: 0;
+        width: 100%;
+        height: 90%;
     }

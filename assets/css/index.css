@@ -40,26 +40,29 @@ nav ul li a{
     padding-left: 00.5rem;
     margin: 0;
 }
-h1{
-    color: white;
+.title{
+    color: rgb(221, 94, 94);
     margin-top: 0.5rem;
     padding-left: 2rem;
-    animation-name: teclados;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-
-@keyframes teclados{
-    0% {
-    left: 0;
-    top: 0;
-    }
-    100% {
-    left: 5rem;
-    top: 0rem;
-    color: #9b59b6;
-    }
+    animation-name: teclados ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes teclados{
+   0%{
+       transform: translateX(-1rem);
+   }
+   50%{
+       transform: translateX(1rem);
+   }
+   100%{
+       transform: translateX(2rem);
+   }
+}
+   
+
+
 
 
 .img1{
@@ -68,12 +71,12 @@ h1{
     width: 90%;
     justify-self: center;
     border-radius: 1rem;
-    transition: scale 2s, border 2s;
-}
-.img1:hover{
-    scale: (5,5);
-    border: 0.2rem dotted #9b59b6;
-}
+    transition: transform 0.5s;
+    }
+    .img1:hover{
+        transform: scale(1,2);
+    }
+
 
 .descripcion{
     display: grid;
@@ -88,6 +91,11 @@ p{
     margin-bottom: 1rem;
     padding: 0.1rem;
     border-radius: 0.5rem;
+}
+p::first-letter{
+    font-weight: bold;
+    font-size: 120%;
+    color: black;
 }
 .foot{
     background-color: rgba(51, 48, 48, 0.57);
@@ -123,22 +131,25 @@ footer ul li{
         border-bottom: 1rem solid black;
         justify-content: space-between;
     }
+
+    
     .title{
         font-size: 2rem;
         font-weight: bold;
-        animation-name: teclados;
-        animation-duration: 5s;
+        animation-name: titulo;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
     }
 
-@keyframes teclados{
+@keyframes titulo{
     0% {
-    left: 0;
-    top: 0;
+    transform: translateY(10px);
+    }
+    50%{
+       transform:translateY(0px) ;
     }
     100% {
-    left: 5rem;
-    top: 0rem;
+    transform: translateY(-10px);
     color: #9b59b6;
     }
 }
